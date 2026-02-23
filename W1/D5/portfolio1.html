@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suhas Gowda | Portfolio</title>
+<style>
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f5f5f5; }
+    nav { display: flex; justify-content: space-between; align-items: center; background-color: #4caf50; padding: 15px 30px; }
+    .logo { color: white; font-size: 22px; font-weight: bold; text-decoration: none; }
+    .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500; }
+    .nav-links a:hover { text-decoration: underline; }
+
+    /* Hero Section - split layout */
+    #home { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 50px; background: linear-gradient(135deg, #ff9a9e, #fad0c4); color: #333; }
+    .hero-text { max-width: 400px; margin: 20px; }
+    .hero-text h1 { font-size: 36px; margin-bottom: 10px; }
+    .hero-text p { font-size: 18px; margin-bottom: 20px; }
+    .Cta-button { background-color: #ff5722; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
+    .Cta-button:hover { background-color: #e64a19; }
+    .profile-img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 20px; border: 5px solid white; }
+
+    /* Sections */
+    section { padding: 40px 20px; }
+    h2 { text-align: center; margin-bottom: 30px; }
+
+    /* About Section */
+    #about { background-color: #2196f3; color: white; display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; }
+    .about-card { background-color: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; max-width: 400px; }
+
+    /* Skills Section */
+    #skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .skill-card { background-color: #ff9800; padding: 20px; border-radius: 10px; width: 200px; color: white; text-align: center; }
+
+    /* Projects Section */
+    #projects { background-color: #9c27b0; color: white; }
+    .project-content { background-color: rgba(255,255,255,0.2); padding: 20px; border-radius: 10px; margin-bottom: 20px; }
+    .project-content a { color: #fff; text-decoration: underline; }
+
+    /* Table */
+    table { width: 80%; margin: 20px auto; border-collapse: collapse; background-color: #fff; border-radius: 10px; overflow: hidden; }
+    th, td { padding: 15px; border: 1px solid #ddd; text-align: center; }
+    th { background-color: #4caf50; color: white; }
+
+    /* Contact Section */
+    #contact { background-color: #607d8b; color: white; }
+    .contact-form { max-width: 500px; margin: auto; background-color: rgba(255,255,255,0.1); padding: 20px; border-radius: 10px; }
+    .form-group { margin-bottom: 15px; }
+    input, select { width: 100%; padding: 10px; border-radius: 5px; border: none; }
+    .submit-btn { background-color: #ff5722; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    .submit-btn:hover { background-color: #e64a19; }
+</style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home" class="logo">Suhas Gowda</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home">
+    <img src="images/profile.jpeg" class="profile-img">
+    <div class="hero-text">
+        <h1>Suhas Gowda</h1>
+        <p>Software Developer <br>MERN Stack | DevOps</p>
+        <a href="#contact" class="Cta-button">Contact Me</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-card">
+        <h3>Full Stack Developer</h3>
+        <p>Experienced in web development and hosting. Specialized in finance-domain projects.</p>
+        <p><strong>Backend:</strong> NodeJS</p>
+        <p><strong>Database:</strong> Optimization</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills">
+    <div class="skill-card">
+        <h4>MERN Stack</h4>
+        <p>ReactJS, NodeJS, ExpressJS, MongoDB</p>
+    </div>
+    <div class="skill-card">
+        <h4>DevOps</h4>
+        <p>Docker, AWS, CI/CD, GitHub Actions</p>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-content">
+        <h4>Gola</h4>
+        <p>Rapid way to book a cab hassle-free.</p>
+        <a href="https://github.com/yourusername/projectname" target="_blank">View Project</a>
+    </div>
+</section>
+
+<!-- Technology Table -->
+<table>
+    <thead>
+        <tr>
+            <th>Project</th>
+            <th colspan="2">Technology</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>AWS Hosting</td>
+            <td>MERN</td>
+            <td>Redis</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <select name="type">
+                    <option value="fte">FTE</option>
+                    <option value="consultant">Consultant</option>
+                </select>
+            </div>
+        </fieldset>
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
+</section>
+
+</body>
+</html>
