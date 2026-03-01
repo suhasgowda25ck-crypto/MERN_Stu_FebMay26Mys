@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metric Snapshot Strip</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-white p-6 m-6 rounded-lg shadow max-w-4xl mx-auto  mt-10" >
+        <div class="flex justify-between items-center">
+            <div>
+                <p class="text-sm text-gray-500">Active Users</p>
+                <p class="text-xl font-bold">1,240</p>
+                <span class="inline-flex items-center bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">
+                    Up
+                </span>
+            </div>
+            <div>
+                <p class="text-sm text-gray-500">Requests / Min</p>
+                <p class="text-xl font-bold">1,240</p>
+                <span class="inline-flex items-center bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm">
+                    Stable
+                </span>
+            </div>
+            <div>
+                <p class="text-sm text-gray-500">Error Rate</p>
+                <p class="text-xl font-bold">2.1%</p>
+                <span class="inline-flex items-center bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">
+                    Down
+                </span>
+            </div>
+            <div>
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg shadow">
+                    Download Report
+                </button>
+            </div>
+        </div>
+        <div class="mt-4 bg-red-100 border-l-4 border-red-500 p-3 rounded">
+            <p class="leading-relaxed text-red-700">
+                Scheduled maintenance tonight may briefly affect dashboard updates.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
