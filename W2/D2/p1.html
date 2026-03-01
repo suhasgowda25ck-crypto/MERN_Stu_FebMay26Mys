@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+</head>
+<!-- 50, 100,.....900 -->
+<body class="bg-yellow-200">
+    <p class="text-red-500">Hello Tailwind CSS</p>
+    <h2 class="text-blue p-6 m-4">Utility Class</h2>
+    <h3 class="text-blue pr-6 mt-4">Utility Class</h3>
+    <h4 class="text-blue px-6 py-6 mt-4">Utility Class2</h4>
+    <div class="border-8 bg-red-100 border-red-500 rounded-r-full/sm/lg" >Name</div>
+    <p class="text-1"> My text</p> <!-- sm/base/lg/x1/2xl/3xl-->
+    <p class="text-2"> My text2</p> <!-- light/normal/bold-->
+    <p class="text-3"> My text3</p> <!-- left/center/right-->
+    <button class="hover:text-red-600 hover:bg-green-700"></button>
+    <!-- sucess:green, error:red, warning/alert:yellow info:blue -->
+    <div class="bg-green-200 p-4"> 
+        <p class="font-bold"> sucess message</p>
+        <p>This is a sucess message</p>
+    </div>
+    <span class="inline-flex items-center bg-blue-100 text-blue-800 px-3 py-1 rounded-full">New</span>
+    <div class="border p-6 rounded m-8">
+        <h3 class="font-bold text-x1">card title</h3>
+        <p>this is a simple message inside a card</p>
+    </div>
+    
+</body>
+</html>
