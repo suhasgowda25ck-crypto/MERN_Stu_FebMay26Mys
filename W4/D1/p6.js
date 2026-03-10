@@ -1,14 +1,14 @@
 //finally
-// function example(){
-//     try{
-//         console.log("example in try block");
-//         return "Try_RETURN";
-//     }
-//     finally{
-//         console.log("This is printed");
-//     }
-// }
-//  console.log("Example result:",example());
+function example(){
+    try{
+        console.log("example in try block");
+        return "Try_RETURN";
+    }
+    finally{
+        console.log("This is printed");
+    }
+}
+ console.log("Example result:",example());
 
 //return in catch block and finally
 function example(){
