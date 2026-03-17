@@ -30,7 +30,7 @@ function tagPassword(password) {
         return "WEAK";
     }
     else {
-        return "WEAK";
+        return "Weak";
     }
 }
 console.log(tagPassword(12345));
