@@ -2,7 +2,7 @@
 function getMessage(){
     return new Promise(function(resolve){
         setTimeout(() => {
-            resolve("Async/await makes promise based code easier to read");
+            resolve("Async/await makes promise based code easier to read.");
         },300);
     })
 }
